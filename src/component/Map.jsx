@@ -6,34 +6,12 @@ const Map = () => {
 
     const [position, setPosition] = React.useState([40.3802948, 49.875192]);
 
-    const allPositions = [
-        position
-    ];
-
-    // const getCurrentPosition = () => {
-    //     if (navigator.geolocation) {
-    //         console.log(navigator.geolocation.getCurrentPosition(
-    //             position => {
-    //                 setPosition([position.coords.longitude, position.coords.latitude]);
-    //                 console.log(position.coords.latitude, position.coords.longitude);
-    //             }
-    //         ));
-    //     } else {
-    //         console.log('Geolocation is not supported in this browser');
-    //     }
-    // }
-
-    // getCurrentPosition();
-
-    const point = (x) => {
-        return (
-            <Marker position={x}>
-                <Popup>
-                    A pretty CSS3 popup. <br /> Easily customizable.
-                </Popup>
-            </Marker>
-        );
-    }
+    const position1 = [40.3802948, 49.8760];
+    const position2 = [40.3802948, 49.8770];
+    const position3 = [40.3802948, 49.8780];
+    const position4 = [40.3802948, 49.8790];
+    const position5 = [40.3802948, 49.8800];
+    const position6 = [40.3802948, 49.8810];
 
 
 
@@ -71,6 +49,36 @@ const Map = () => {
                         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                     />
                     <Marker position={position}>
+                        <Popup>
+                            A pretty CSS3 popup. <br /> Easily customizable.
+                        </Popup>
+                    </Marker>
+                    <Marker position={position1}>
+                        <Popup>
+                            A pretty CSS3 popup. <br /> Easily customizable.
+                        </Popup>
+                    </Marker>
+                    <Marker position={position2}>
+                        <Popup>
+                            A pretty CSS3 popup. <br /> Easily customizable.
+                        </Popup>
+                    </Marker>
+                    <Marker position={position3}>
+                        <Popup>
+                            A pretty CSS3 popup. <br /> Easily customizable.
+                        </Popup>
+                    </Marker>
+                    <Marker position={position4}>
+                        <Popup>
+                            A pretty CSS3 popup. <br /> Easily customizable.
+                        </Popup>
+                    </Marker>
+                    <Marker position={position5}>
+                        <Popup>
+                            A pretty CSS3 popup. <br /> Easily customizable.
+                        </Popup>
+                    </Marker>
+                    <Marker position={position6}>
                         <Popup>
                             A pretty CSS3 popup. <br /> Easily customizable.
                         </Popup>
