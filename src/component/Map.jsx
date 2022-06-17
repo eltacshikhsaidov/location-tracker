@@ -4,8 +4,8 @@ import { MapContainer, TileLayer, Popup, Marker } from 'react-leaflet';
 
 const Map = () => {
 
-    const [position, setPosition] = React.useState([40.3802948, 49.875192]);
 
+    const position = [40.3802948, 49.875192];
     const position1 = [40.3802948, 49.8760];
     const position2 = [40.3802948, 49.8770];
     const position3 = [40.3802948, 49.8780];
